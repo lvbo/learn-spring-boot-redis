@@ -1,6 +1,6 @@
 package io.github.lvbo.lsb.redis.service.impl;
 
-import io.github.lvbo.learn.spring.boot.redis.service.RedisTransactionStringService;
+import io.github.lvbo.lsb.redis.service.RedisTransactionStringService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
