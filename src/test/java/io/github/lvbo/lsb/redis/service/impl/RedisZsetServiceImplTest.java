@@ -36,8 +36,8 @@ public class RedisZsetServiceImplTest {
     @Test
     public void getRank() {
         User user = new User();
-        user.setId(1);
-        user.setName("user 1");
+        user.setId(2);
+        user.setName("user 2");
         user.setPassword("ttttttdd");
         System.out.println(redisZsetService.getRank("lvbo_score", user));
     }

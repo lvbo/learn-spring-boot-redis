@@ -31,6 +31,6 @@ public class RedisListServiceImplTest {
 
     @Test
     public void pop() {
-        System.out.println(redisListService.pop("lvbo_list"));
+        System.out.println(redisListService.leftPop("lvbo_list"));
     }
 }

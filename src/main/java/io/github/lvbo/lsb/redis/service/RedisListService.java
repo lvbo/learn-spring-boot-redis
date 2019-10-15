@@ -8,5 +8,5 @@ public interface RedisListService {
 
     void create(String key, User user);
     List<User> get(String key, long start, long end);
-    User pop(String key);
+    User leftPop(String key);
 }

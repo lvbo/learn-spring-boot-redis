@@ -25,7 +25,7 @@ public class RedisListServiceImpl implements RedisListService {
     }
 
     @Override
-    public User pop(String key) {
+    public User leftPop(String key) {
         return listOperations.leftPop(key);
     }
 }

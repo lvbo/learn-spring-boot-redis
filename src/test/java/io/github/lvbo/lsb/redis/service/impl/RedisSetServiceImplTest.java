@@ -27,7 +27,7 @@ public class RedisSetServiceImplTest {
 
     @Test
     public void randomGet() {
-        System.out.println(redisSetService.randomGet("lvbo_set"));
+        System.out.println(redisSetService.randomGet("lvbo_set_2"));
     }
 
     @Test
@@ -36,11 +36,16 @@ public class RedisSetServiceImplTest {
         user.setId(1);
         user.setName("user 1");
         user.setPassword("ttttttdd");
-        redisSetService.deleteElement("lvbo_set", user);
+        redisSetService.deleteElement("lvbo_set_2", user);
     }
 
     @Test
     public void union() {
+        User user = new User();
+        user.setId(2);
+        user.setName("user 2");
+        user.setPassword("ttttttdd");
+        redisSetService.create("lvbo_set", user);
         System.out.println(redisSetService.union("lvbo_set", "lvbo_set_2"));
     }
 }
